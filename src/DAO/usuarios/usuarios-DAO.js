@@ -45,9 +45,9 @@ module.exports = class usuariosDAO {
     alteraUsuario(body,params)
     {
         return new Promise ((resolve,reject)=>{
-            this._bd.run(`UPDATE USUARIOS SET NOME = (?), SET SENHA = (?) WHERE EMAIL = (?);`[body.NOME,body.SENHA,params],(error)=>{
+            this._bd.run(`UPDATE USUARIOS SET NOME = (?), SENHA = (?) WHERE EMAIL = (?);`,[body.NOME,body.SENHA,params], (error)=>{
                 if(error){
-                    reject(error)
+                    reject("Erro ao inserir usuario")
                 }
                 else{
                     resolve("Usuário alterado")
@@ -57,7 +57,7 @@ module.exports = class usuariosDAO {
     };  
     deletaUsuario(params){
         return new Promise((resolve,reject)=>{
-            this._bd.run(`DELETE FROM USUARIOS WHERE ID = ?;`[params],(error)=>{
+            this._bd.run(`DELETE FROM USUARIOS WHERE EMAIL = ?;`,[params],(error)=>{
                 if(error){
                     reject(error)
                 }
