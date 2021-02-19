@@ -1,7 +1,7 @@
 module.exports = class usuariosDAO {
     constructor(bd){
         this._bd = bd;
-    }
+    };
     listaUsuarios(){
         return new Promise ((resolve,reject)=>{
             this._bd.all("SELECT * FROM USUARIOS", (error,linhas)=>{
