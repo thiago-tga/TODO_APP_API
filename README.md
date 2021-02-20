@@ -58,3 +58,16 @@ O projeto está no formato API REST, utilizando 4 verbos HTTP `GET, POST, PUT, D
 
 - Para deletar uma tarefa no banco de dados, em seu testador de requisições, use o verbo `DELETE` junto a rota `localhost:8080/tarefas/:id` e substitua o parâmetro `:id` pelo id da tarefa que deseja deletar.
 ---
+## Ferramentas utilizadas
+- Express
+- Body-Parser
+- Sqlite3
+- Nodemon (Dependência de desenvolvimento)
+## Colaborador
+<a href="https://github.com/thiago-tga"><img style="border-radius: 50%;" src="https://media-exp1.licdn.com/dms/image/C4D03AQHR-AZMVpN9iA/profile-displayphoto-shrink_400_400/0/1610584257602?e=1616025600&v=beta&t=-nYa_s1xQjXgPNRmpIPf1EWWFsXH3Px7dHmpzEMj-2I" width="100px;" alt=""/><br /><sub><b>Thiago Gomes</b></sub>
+      </a>
+      <br />
+      <a href="https://github.com/thiago-tga" title="GitHub">💻
+      <a href="https://www.instagram.com/thiaguio/" title="instagram">📷
+      <a href="https://www.linkedin.com/in/thiago-araujo-23761115a/" title="linkedin">💼
+      </a>
