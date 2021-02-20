@@ -36,3 +36,20 @@ O projeto está no formato API REST, utilizando 4 verbos HTTP `GET, POST, PUT, D
   }
 ```
 ---
+#### MÉTODO PUT
+- Para alterar um usuário no banco de dados, em seu testador de requisições, use o verbo `PUT` junto a rota `localhost:8080/usuarios/:email` e substitua o parametro `:email` pelo o email do usuário que deseja alterar. Os únicos campos alteráveis são `NOME` e `SENHA` e devem vir no corpo da requisição em formato JSON:
+```json
+{
+	"NOME" : "Nome a ser alterado",
+	"SENHA": "senha a ser alterada"
+}
+```
+- Para alterar uma tarefa no banco de dados, em seu testador de requisições, use o verbo `PUT` junto a rota `localhost:8080/tarefa/:id` e substitua o parametro `:id` pelo o id da tarefa que deseja alterar. Os únicos campos alteráveis são `TITULO`, `DESCRICAO` e `STATUS` e devem vir no corpo da requisição em formato JSON:
+```json
+{
+    "TITULO": "Titulo a ser alterado",
+    "DESCRICAO": "Descrição a ser alterada",
+    "STATUS": "Status a ser alterado (TODO,DOING, CONTINUO)"
+ }
+```
+---
