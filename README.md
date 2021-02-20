@@ -3,5 +3,14 @@
 
 ## Como inicializar o projeto
 - Primeiro clone este repositório em sua maquina usando os comandos em seu terminal `git clone https://github.com/thiago-tga/TODO_APP_API.git`
+- Após ter clonado os arquivos para sua maquina, em seu terminal digite `npm install` para baixar as dependências do projeto e inicie a API digintando, ainda em seu terminal o comando `npm start.
 
+## Rotas
+O projeto está no formato API REST, utilizando 4 verbos HTTP `GET, POST, PUT, DELETE` para implementar as operações de CRUD. Nesta API os verbos fazem requisições em duas tabelas do banco de dados : `USUARIOS` e `TAREFAS`.
+#### MÉTODO GET
+- Para listar todos os usuários no banco de dados, utilize em seu testador de requisições o verbo `GET` junto a rota `localhost:8080/usuarios`. O retorno esperado deve ser um array com todos os usuários (json).
+- Para consultar um usuário especifico no banco de dados, utilize em seu testador de requisições o verbo `GET` junto a rota `localhost:8080/usuarios/:email` e substitua o parametro `:email` pelo email do usuário que deseja encontrar. O retorno esperado deve ser um array com um único usuário.
+- Para listar todas as tarefas no banco de dados, utilize em seu testador de requisições o verbo `GET` junto a rota `localhost:8080/tarefas`. O retorno esperado deve ser um array com todas as tarefas (json).
+- Para consultar uma tarefa especifica no banco de dados, utilize em seu testador de requisições o verbo `GET` junto a rota `localhost:8080/tarefas/:status` e substitua o parametro `:status` pelo status `TODO, DOING ou Continuo` da tarefa que deseja encontrar. O retorno esperado deve ser um array com todas as tarefas referentes ao status desejado.
+---
 
